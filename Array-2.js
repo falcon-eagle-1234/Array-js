@@ -127,6 +127,16 @@ console.log(minMaxLengthAverage([7, 13, 3, 77, 100]));
 // Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for.
  
 // Example:
-// > console.log(findIndex(['github', 'gitlab', 'bitbucket', 'apollo'], 'gitlab'));
+
+function findIndex(arr,stringNumber){
+    let indexToo;
+    for(i=0;i<arr.length;i++){
+        if(stringNumber===arr[i]){
+            indexToo=i
+        }
+    }
+    return indexToo;
+}
+console.log(findIndex(['github',  'bitbucket', 'apollo','gitlab'], 'gitlab'));
 // > 1
  
